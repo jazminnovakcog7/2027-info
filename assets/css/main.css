@@ -8287,6 +8287,497 @@ section[id] {
 }
 
 /* =========================================================
+   Promotion Section - This is below the Overview section -J.N
+   ========================================================= */
+
+/* Convention '27 Promotion */
+
+/* Convention '27 Promotion */
+
+.gc-promotion-section {
+	padding: 5rem 2rem;
+	background: #ffffff;
+}
+
+.gc-promotion-inner {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+
+/* Header */
+
+.gc-promotion-header {
+	text-align: center;
+	margin-bottom: 2.25rem;
+}
+
+.gc-promotion-label {
+	margin: 0 0 0.5rem;
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: #777777;
+}
+
+.gc-promotion-header h2 {
+	margin: 0;
+	font-size: 2.5rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #333333;
+}
+
+
+/* Main Card */
+
+.gc-promotion-main-card {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background: #faf9fd;
+	border: 1px solid #e1ddea;
+	border-radius: 8px;
+	box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+	overflow: hidden;
+}
+
+
+/* Promotion */
+
+.gc-promotion-content {
+	padding: 3rem;
+	background: #ffffff;
+}
+
+.gc-promotion-content p {
+	margin: 0 0 1.35rem;
+	font-size: 0.95rem;
+	line-height: 1.8;
+	color: #555555;
+}
+
+.gc-promotion-content p:last-child {
+	margin-bottom: 0;
+}
+
+.gc-promotion-lead {
+	font-size: 1.05rem !important;
+	color: #333333 !important;
+}
+
+.gc-promotion-content strong {
+	color: #333333;
+}
+
+.gc-promotion-content a {
+	color: #51369a;
+	font-weight: 500;
+}
+
+
+/* Promotion Highlight */
+
+.gc-promotion-highlight {
+	margin-top: 2rem;
+	padding: 1.5rem 1.75rem;
+	background: #faf9fd;
+	border-left: 4px solid #51369a;
+	border-radius: 0 8px 8px 0;
+}
+
+.gc-promotion-highlight p {
+	margin-bottom: 0.75rem;
+}
+
+.gc-promotion-highlight strong {
+	display: block;
+	color: #51369a;
+}
+
+
+/* Divider */
+
+.gc-promotion-divider {
+	width: 100%;
+	height: 1px;
+	background: #e1ddea;
+}
+
+
+/* Video Testimonies */
+
+.gc-testimony-section {
+	padding: 3rem;
+	background: #faf9fd;
+}
+
+
+/* Testimony Header */
+
+.gc-testimony-heading {
+	margin-bottom: 1.75rem;
+}
+
+.gc-testimony-label {
+	margin: 0 0 0.4rem;
+	font-size: 0.72rem;
+	font-weight: 600;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: #51369a;
+}
+
+.gc-testimony-heading h3 {
+	margin: 0;
+	font-size: 1.7rem;
+	font-weight: 500;
+	line-height: 1.3;
+	color: #333333;
+}
+
+
+/* Invitation Card */
+
+.gc-testimony-intro-card {
+	margin-bottom: 2rem;
+	padding: 2rem 2.5rem;
+	background: #ffffff;
+	border: 1px solid #e1ddea;
+	border-radius: 8px;
+}
+
+.gc-testimony-intro-card p {
+	margin: 0 0 1.25rem;
+	font-size: 0.92rem;
+	line-height: 1.8;
+	color: #555555;
+}
+
+.gc-testimony-intro-card p:last-child {
+	margin-bottom: 0;
+}
+
+.gc-testimony-intro-card strong {
+	color: #333333;
+}
+
+
+/* Featured Testimony */
+
+.gc-testimony-feature {
+	display: grid;
+	grid-template-columns: 1.35fr 0.65fr;
+	align-items: center;
+	gap: 2rem;
+	margin-bottom: 2rem;
+	padding: 2rem;
+	background: #ffffff;
+	border: 1px solid #e1ddea;
+	border-radius: 8px;
+}
+
+
+/* Video */
+
+.gc-testimony-video {
+	width: 100%;
+	min-width: 0;
+}
+
+.gc-video-wrapper {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+	background: #000000;
+	border-radius: 8px;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.gc-video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+
+/* Video Text */
+
+.gc-testimony-feature-text {
+	min-width: 0;
+}
+
+.gc-feature-label {
+	margin: 0 0 0.6rem;
+	font-size: 0.7rem;
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: #51369a;
+}
+
+.gc-testimony-feature-text h4 {
+	margin: 0 0 1rem;
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: 1.4;
+	color: #333333;
+}
+
+.gc-testimony-feature-text p {
+	margin: 0;
+	font-size: 0.88rem;
+	line-height: 1.7;
+	color: #666666;
+}
+
+
+/* How to Submit */
+
+.gc-testimony-submit {
+	padding: 2rem;
+	background: #ffffff;
+	border: 1px solid #e1ddea;
+	border-radius: 8px;
+}
+
+.gc-submit-heading {
+	margin-bottom: 1.75rem;
+}
+
+.gc-submit-heading h4 {
+	margin: 0;
+	font-size: 1.35rem;
+	font-weight: 500;
+	line-height: 1.4;
+	color: #333333;
+}
+
+
+/* Submission Steps */
+
+.gc-submit-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+}
+
+.gc-submit-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+	min-width: 0;
+}
+
+.gc-submit-number {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 36px;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: #51369a;
+	color: #ffffff;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.gc-submit-item > div {
+	min-width: 0;
+}
+
+.gc-submit-item strong {
+	display: block;
+	margin-bottom: 0.4rem;
+	font-size: 0.88rem;
+	line-height: 1.4;
+	color: #333333;
+}
+
+.gc-submit-item p {
+	margin: 0;
+	font-size: 0.8rem;
+	line-height: 1.65;
+	color: #666666;
+}
+
+.gc-submit-item a {
+	color: #51369a;
+	font-weight: 600;
+	word-break: break-word;
+}
+
+
+/* Submission Notice */
+
+.gc-testimony-open {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.65rem;
+	margin-top: 2rem;
+	padding: 1rem 1.25rem;
+	background: #faf9fd;
+	border: 1px solid #e1ddea;
+	border-left: 4px solid #51369a;
+	border-radius: 6px;
+	color: #51369a;
+	font-size: 0.85rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.gc-testimony-open-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 24px;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: #51369a;
+	color: #ffffff;
+	font-size: 0.7rem;
+	line-height: 1;
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 980px) {
+
+	.gc-promotion-section {
+		padding: 4rem 2rem;
+	}
+
+	.gc-testimony-feature {
+		grid-template-columns: 1fr;
+		gap: 1.75rem;
+	}
+
+	.gc-submit-grid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 736px) {
+
+	.gc-promotion-section {
+		padding: 3.5rem 1.25rem;
+	}
+
+	.gc-promotion-header {
+		margin-bottom: 1.75rem;
+	}
+
+	.gc-promotion-header h2 {
+		font-size: 2rem;
+	}
+
+	.gc-promotion-content {
+		padding: 2rem 1.5rem;
+	}
+
+	.gc-promotion-highlight {
+		padding: 1.35rem 1.5rem;
+	}
+
+	.gc-testimony-section {
+		padding: 2rem 1.5rem;
+	}
+
+	.gc-testimony-heading h3 {
+		font-size: 1.45rem;
+	}
+
+	.gc-testimony-intro-card {
+		padding: 1.5rem;
+	}
+
+	.gc-testimony-feature {
+		padding: 1.25rem;
+		gap: 1.5rem;
+	}
+
+	.gc-testimony-submit {
+		padding: 1.5rem;
+	}
+
+	.gc-submit-grid {
+		gap: 1.5rem;
+	}
+
+	.gc-testimony-open {
+		justify-content: flex-start;
+		text-align: left;
+	}
+
+}
+
+
+/* Small Mobile */
+
+@media screen and (max-width: 480px) {
+
+	.gc-promotion-section {
+		padding: 3rem 1rem;
+	}
+
+	.gc-promotion-header h2 {
+		font-size: 1.75rem;
+	}
+
+	.gc-promotion-content {
+		padding: 1.75rem 1.25rem;
+	}
+
+	.gc-promotion-highlight {
+		padding: 1.25rem;
+	}
+
+	.gc-testimony-section {
+		padding: 1.75rem 1.25rem;
+	}
+
+	.gc-testimony-intro-card {
+		padding: 1.25rem;
+	}
+
+	.gc-testimony-feature {
+		padding: 1rem;
+	}
+
+	.gc-testimony-submit {
+		padding: 1.25rem;
+	}
+
+	.gc-submit-number {
+		flex: 0 0 32px;
+		width: 32px;
+		height: 32px;
+	}
+
+	.gc-testimony-open {
+		padding: 0.9rem 1rem;
+	}
+
+}
+
+
+/* =========================================================
    Hide Classes Here: 
    ========================================================= */
 .speakers-visible,
@@ -8304,4 +8795,6 @@ section[id] {
 .footerIcons-visible {
 	display: none !important;
 }
+
+
 
