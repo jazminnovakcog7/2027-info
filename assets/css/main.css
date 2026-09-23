@@ -4279,37 +4279,71 @@
 
 		}
 
-/* Footer */
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
+#footer {
+	padding: 4rem 0 2rem 0;
+	background: #4C3B93 !important;
+	text-align: center;
+}
+
+
+/* Footer links */
+#footer a {
+	color: rgba(255, 255, 255, 0.85) !important;
+	text-decoration: none;
+	transition: color 0.25s ease;
+}
+
+
+/* Gold hover */
+#footer a:hover,
+#footer a:focus {
+	color: #DAA628 !important;
+}
+
+
+/* Social icons */
+#footer .icons a {
+	color: rgba(255, 255, 255, 0.85) !important;
+}
+
+#footer .icons a:hover,
+#footer .icons a:focus {
+	color: #DAA628 !important;
+}
+
+
+/* Copyright text */
+#footer .copyright {
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 0.9rem;
+	margin: 0 0 2rem 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+/* Copyright link */
+#footer .copyright a {
+	color: #FFFFFF !important;
+	text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .copyright a:focus {
+	color: #DAA628 !important;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 736px) {
 	#footer {
-		padding: 4rem 0 2rem 0 ;
-		background: #000;
-		text-align: center;
+		padding: 3rem 0 1rem 0;
 	}
-
-		#footer a {
-			color: rgba(255, 255, 255, 0.5);
-		}
-
-			#footer a:hover {
-				color: #FFF;
-			}
-
-		#footer .copyright {
-			color: #bbb;
-			font-size: 0.9rem;
-			margin: 0 0 2rem 0;
-			padding: 0;
-			text-align: center;
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#footer {
-				padding: 3rem 0 1rem 0 ;
-			}
-
-		}
+}
 
 /* =========================================================
    GC CONVENTION 2027 NAVIGATION
@@ -4336,8 +4370,9 @@ section[id] {
 	justify-content: space-between;
 	padding: 0 2rem;
 
-	/* Header appearance after scrolling */
-	background: #111;
+	/* Convention purple */
+	background: #4C3B93 !important;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -4358,6 +4393,10 @@ section[id] {
 	color: #fff !important;
 	text-decoration: none !important;
 	white-space: nowrap;
+}
+
+#header > .logo a:hover {
+	color: #DAA628 !important;
 }
 
 
@@ -4383,7 +4422,6 @@ section[id] {
 	height: 100%;
 	padding: 0;
 
-	/* White when header becomes dark after scrolling */
 	color: #fff !important;
 
 	font-size: 0.72rem;
@@ -4400,10 +4438,10 @@ section[id] {
 }
 
 
-/* Navigation hover */
+/* Gold navigation hover */
 #header .desktop-links a:hover,
 #header .desktop-links a:focus {
-	color: #c36aae !important;
+	color: #DAA628 !important;
 	text-decoration: none !important;
 	border-bottom: none !important;
 	transform: translateY(-2px);
@@ -4423,32 +4461,39 @@ section[id] {
 
 
 /* ---------------------------------------------------------
-   TRANSPARENT HEADER OVER BANNER
+   HEADER OVER BANNER
    --------------------------------------------------------- */
 
+/*
+   Keep the header purple even when Hielo adds the "alt" class.
+   This prevents the header from becoming transparent and the
+   navigation from becoming black.
+*/
+
 #header.alt {
-	background: transparent;
+	background: #4C3B93 !important;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
 }
 
 
-/* Logo becomes black over light banner */
+/* Logo stays white */
 #header.alt > .logo a {
-	color: #000 !important;
+	color: #fff !important;
 }
 
 
-/* Navigation becomes black over light banner */
+/* Navigation stays white */
 #header.alt .desktop-links a {
-	color: #000 !important;
+	color: #fff !important;
 }
 
 
-/* Purple hover while over banner */
+/* Gold hover */
 #header.alt .desktop-links a:hover,
 #header.alt .desktop-links a:focus {
-	color: #8a4680 !important;
+	color: #DAA628 !important;
 }
 
 
@@ -4468,8 +4513,8 @@ section[id] {
 	display: none;
 	align-items: center;
 	gap: 0.6rem;
+	margin-left: auto;
 
-	/* White after scrolling */
 	color: #fff !important;
 
 	font-size: 0.85rem;
@@ -4477,10 +4522,13 @@ section[id] {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	text-decoration: none !important;
+
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
 }
 
 
-/* Remove Hielo's old Font Awesome hamburger */
+/* Remove Hielo's original Font Awesome hamburger */
 #header .mobile-menu-toggle:before {
 	display: none !important;
 	content: none !important;
@@ -4489,10 +4537,11 @@ section[id] {
 
 /* Custom hamburger icon */
 #header .mobile-menu-toggle:after {
-	content: "";
-	display: inline-block;
-	width: 20px;
-	height: 14px;
+	content: "" !important;
+	display: inline-block !important;
+	width: 22px;
+	height: 16px;
+	flex-shrink: 0;
 
 	background:
 		linear-gradient(#fff, #fff) top / 100% 2px no-repeat,
@@ -4501,18 +4550,31 @@ section[id] {
 }
 
 
-/* Black mobile menu button over light banner */
+/* Keep mobile button white when header has alt class */
 #header.alt .mobile-menu-toggle {
-	color: #000 !important;
+	color: #fff !important;
+}
+
+#header.alt .mobile-menu-toggle:after {
+	background:
+		linear-gradient(#fff, #fff) top / 100% 2px no-repeat,
+		linear-gradient(#fff, #fff) center / 100% 2px no-repeat,
+		linear-gradient(#fff, #fff) bottom / 100% 2px no-repeat;
 }
 
 
-/* Black hamburger over light banner */
-#header.alt .mobile-menu-toggle:after {
+/* Gold hover */
+#header .mobile-menu-toggle:hover,
+#header.alt .mobile-menu-toggle:hover {
+	color: #DAA628 !important;
+}
+
+#header .mobile-menu-toggle:hover:after,
+#header.alt .mobile-menu-toggle:hover:after {
 	background:
-		linear-gradient(#000, #000) top / 100% 2px no-repeat,
-		linear-gradient(#000, #000) center / 100% 2px no-repeat,
-		linear-gradient(#000, #000) bottom / 100% 2px no-repeat;
+		linear-gradient(#DAA628, #DAA628) top / 100% 2px no-repeat,
+		linear-gradient(#DAA628, #DAA628) center / 100% 2px no-repeat,
+		linear-gradient(#DAA628, #DAA628) bottom / 100% 2px no-repeat;
 }
 
 
@@ -4536,9 +4598,11 @@ section[id] {
 		display: none;
 	}
 
-	/* Show mobile menu */
+	/* Show mobile menu button */
 	#header .mobile-menu-toggle {
-		display: inline-flex;
+		display: inline-flex !important;
+		align-items: center;
+		justify-content: flex-end;
 		margin-left: auto;
 		padding: 0;
 	}
@@ -4577,20 +4641,53 @@ section[id] {
    --------------------------------------------------------- */
 
 #menu {
-	background: rgba(17, 17, 17, 0.98);
+	background: #5D4AA8 !important;
+	color: #fff !important;
 }
 
+
+/* Mobile navigation links */
 #menu > ul.links > li > a:not(.button) {
-	color: rgba(255, 255, 255, 0.7);
+	color: rgba(255, 255, 255, 0.92) !important;
 	font-size: 0.8rem;
-	font-weight: 400;
+	font-weight: 500;
 	letter-spacing: 0.08em;
-	text-decoration: none;
+	text-decoration: none !important;
+	border-color: rgba(255, 255, 255, 0.15);
+	transition: color 0.25s ease;
 }
 
-#menu > ul.links > li > a:not(.button):hover {
-	color: #fff;
-	text-decoration: none;
+
+/* Gold hover / active feel */
+#menu > ul.links > li > a:not(.button):hover,
+#menu > ul.links > li > a:not(.button):focus {
+	color: #DAA628 !important;
+}
+
+
+/* Close button */
+#menu .close {
+	color: #fff !important;
+}
+
+
+/* Close X */
+#menu .close::before {
+	content: "\00d7" !important;
+	display: block !important;
+
+	font-family: Arial, sans-serif !important;
+	font-size: 32px !important;
+	font-weight: 300 !important;
+	line-height: 1 !important;
+
+	color: #fff !important;
+}
+
+
+/* Gold close button hover */
+#menu .close:hover::before {
+	color: #DAA628 !important;
 }
 
 
